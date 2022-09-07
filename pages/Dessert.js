@@ -1,9 +1,11 @@
 import Image from "next/image"; 
 
+import styled from "styled-components";
+
 export default function Dessert() {
   return (
     <>
-      <h2>Delicious Desserts</h2>
+      <Subtitle>Delicious Desserts</Subtitle>
       <p>Here, you can find recepies for the perfect ending of an exquisite meal!</p>
       <Image 
       alt=""
@@ -15,3 +17,8 @@ export default function Dessert() {
       </>
   );
 }
+
+const Subtitle = styled.h2`
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+font-size: 1.5rem; 
+`

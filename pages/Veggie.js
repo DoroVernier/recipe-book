@@ -1,12 +1,13 @@
 import Image from 'next/image'; 
 import pizza from '../public/pizza.jpg';
+import styled from "styled-components";
 
 
 
 export default function Dessert() {
   return (
     <>
-      <h2>Dishes</h2>
+      <Subtitle>Dishes</Subtitle>
       <p>Easy, healthy and delicious!</p>
       <Image 
       alt=""
@@ -17,3 +18,8 @@ export default function Dessert() {
     </>
   );
 }
+
+const Subtitle = styled.h2`
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+font-size: 1.5rem; 
+`
